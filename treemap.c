@@ -202,7 +202,6 @@ Pair * firstTreeMap(TreeMap * tree) {
 
 Pair * nextTreeMap(TreeMap * tree) {
     TreeNode * current = tree->current;
-    TreeNode * parent = NULL;
 
     if (current->right != NULL){
         current = current->right;
