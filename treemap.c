@@ -139,8 +139,8 @@ Pair * nextTreeMap(TreeMap * tree) {
             current = parent;
             parent = parent->parent;
         }
-        tree->current = parent;
-        return parent->pair;
+        tree->current = current;
+        return current->pair;
     }
     return NULL;
 }
