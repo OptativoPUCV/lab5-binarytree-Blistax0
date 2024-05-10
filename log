@@ -23,3 +23,9 @@ treemap.c:80:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 8722620
+Fri 10 May 2024 01:08:12 AM UTC: 
+ treemap.c | 37 +++++++++++--------------------------
+ 1 file changed, 11 insertions(+), 26 deletions(-)
+ tests:  1|8
+total_score: 0/70
+79ddb40
