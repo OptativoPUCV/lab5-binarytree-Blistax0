@@ -202,6 +202,7 @@ Pair * firstTreeMap(TreeMap * tree) {
 
 Pair * nextTreeMap(TreeMap * tree) {
     TreeNode * current = tree->current;
+    TreeNode * parent = NULL;
 
     if (current->right != NULL){
         current = current->right;
@@ -211,13 +212,11 @@ Pair * nextTreeMap(TreeMap * tree) {
         tree->current = current;
         return current->pair;
     }
-    
     else {
         while (current->parent != NULL && current->parent->right == current){
             current = current->parent;
         }
         tree->current = current->parent;
-        return current->pair;
+        return current->parent->pair;
     }
-    return NULL;
 }
