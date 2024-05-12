@@ -180,20 +180,11 @@ Pair * upperBound(TreeMap * tree, void* key) {
     TreeNode* ub_node = NULL;
 
     while (current != NULL){
-        if (is_equal(tree, current->pair->key, key)){
-            ub_node = current;
-        }
-            
-        if (tree->lower_than(current->pair->key, key) == 0)
-            return current->pair;
-
-        else if (tree->lower_than(current->pair->key, key) == 1){
+        if (tree->lower_than(key, current->pair->key) == 1){
             ub_node = current;
             current = current->left;
         }
-            
         else {
-            ub_node = current;
             current = current->right;
         }
     }
