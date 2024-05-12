@@ -343,3 +343,9 @@ treemap.c:192:13: note: ...this statement, but the latter is misleadingly indent
 cc1: all warnings being treated as errors
 Compilation failed
 c0d9f81
+Sun 12 May 2024 03:15:13 AM UTC: 
+ treemap.c | 12 +++++++++---
+ 1 file changed, 9 insertions(+), 3 deletions(-)
+ tests:  25|1
+total_score: 60/70
+77e3e0c
